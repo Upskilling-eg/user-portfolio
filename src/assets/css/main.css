@@ -1,0 +1,76 @@
+/** ====================
+ *  Main css
+=======================*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+:root {
+  --link_color: #2c98f0cc;
+  --main_black: #2f2f2f;
+  --red_color: #ec5453;
+  --blue_color: #2c98f0;
+  --orange_color: #f9bf3f;
+  --violet_color: #a84cb8;
+  --green_color: #2fa499;
+  --dark_blue: #4054b2;
+}
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f4f7f7;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #c9c3c3;
+}
+.animate__animated {
+  --animate-duration: 1.5s;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+  /* font-family: "Playfair", serif; */
+  overflow-x: hidden;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.base-container-bx{
+    position: relative;
+    min-height: 100vh;
+    /* padding-inline-start: 20%; */
+    background-color: #f5f5f5;
+}
+.pre-title{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    margin: 0 0 30px;
+    color: var(--main_black);
+    font-family: "Playfair", serif;
+}
+.content p{
+    color: #000000b3;
+    font-weight: 300;
+    line-height: 2;
+}
+.content p strong{
+    font-weight: 600;
+}

@@ -1,0 +1,183 @@
+.skills-bx{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-inline-start: 20%;
+    .content-bx{
+        min-height: 100vh;
+        background-color: #fff;
+        padding: 50px 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .progress-bar-item{
+        margin-bottom: 30px;
+        position: relative;
+        h3{
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--main_black);
+        }
+        .item-progress-bar{
+            height: 6px;
+        }
+        &.photoshop{
+            position: relative;
+            .progress-bar{
+                background-color: var(--blue_color);
+            }
+            .num{
+                color: var(--blue_color);
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 0;
+                inset-inline-end: calc(25% - 8px);
+            }
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                bottom: -2px;
+                border-radius: 50%;
+                position: absolute;
+                inset-inline-start: calc(75% - 2px);
+                background-color: var(--blue_color);
+            }
+        }
+        &.jquery{
+            position: relative;
+            .progress-bar{
+                background-color: var(--red_color);
+            }
+            .num{
+                color: var(--red_color);
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 0;
+                inset-inline-end: calc(40% - 8px);
+            }
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                bottom: -2px;
+                border-radius: 50%;
+                position: absolute;
+                inset-inline-start: calc(60% - 2px);
+                background-color: var(--red_color);
+            }
+        }
+        &.html{
+            position: relative;
+            .progress-bar{
+                background-color: var(--orange_color);
+            }
+            .num{
+                color: var(--orange_color);
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 0;
+                inset-inline-end: calc(15% - 8px);
+            }
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                bottom: -2px;
+                border-radius: 50%;
+                position: absolute;
+                inset-inline-start: calc(85% - 2px);
+                background-color: var(--orange_color);
+            }
+        }
+        &.css{
+            position: relative;
+            .progress-bar{
+                background-color: var(--violet_color);
+            }
+            .num{
+                color: var(--violet_color);
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 0;
+                inset-inline-end: calc(10% - 8px);
+            }
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                bottom: -2px;
+                border-radius: 50%;
+                position: absolute;
+                inset-inline-start: calc(90% - 2px);
+                background-color: var(--violet_color);
+            }
+        }
+        &.wordpress{
+            position: relative;
+            .progress-bar{
+                background-color: var(--green_color);
+            }
+            .num{
+                color: var(--green_color);
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 0;
+                inset-inline-end: calc(30% - 8px);
+            }
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                bottom: -2px;
+                border-radius: 50%;
+                position: absolute;
+                inset-inline-start: calc(70% - 2px);
+                background-color: var(--green_color);
+            }
+        }
+        &.seo{
+            position: relative;
+            .progress-bar{
+                background-color: var(--dark_blue);
+            }
+            .num{
+                color: var(--dark_blue);
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 0;
+                inset-inline-end: calc(20% - 8px);
+            }
+            &::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                bottom: -2px;
+                border-radius: 50%;
+                position: absolute;
+                inset-inline-start: calc(80% - 2px);
+                background-color: var(--dark_blue);
+            }
+        }
+    }
+}
+
+
+
+/** ====================
+ *  Responsive
+=======================*/
+@media screen and (max-width: 991px){
+    .skills-bx{
+        padding-inline-start: 0 !important;
+    }
+    .skills-bx .progress-bar-item{
+        margin-bottom: 50px;
+    }
+}
